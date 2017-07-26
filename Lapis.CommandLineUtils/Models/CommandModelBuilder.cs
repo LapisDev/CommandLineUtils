@@ -283,7 +283,13 @@ namespace Lapis.CommandLineUtils.Models
                 return false;
             if (methodInfo.IsGenericMethod)
                 return false;
-            return methodInfo.IsPublic;
+            if (!methodInfo.IsPublic)
+                return false;
+            if (methodInfo.IsDefined(typeof(NonCommandAttribute)))
+                return false;
+            if (methodInfo.IsDefined(typeof(CommandAttribute)))
+                return true;
+            return true;
         }
 
         protected virtual bool IsArgument(ParameterInfo parameterInfo)
