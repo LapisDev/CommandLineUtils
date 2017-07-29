@@ -2,7 +2,7 @@
 `Lapis.CommandLineUtils` is a .NET Core library for creating neat command line application. It denpends on package `Microsoft.Extensions.CommandlineUtils` and `Microsoft.Extensions.DependencyInjection`.
 
 ## Examples
-An example command line app using `CommandLineUtils` is available (under [CommandLineSampleApp](/CommandLineSampleApp)). Below is a quickstart to explore the featuresn of `CommandLineUtils`.
+An example command line app using `CommandLineUtils` is available (under [CommandLineSampleApp](samples/CommandLineSampleApp)). Below is a quickstart to explore the featuresn of `CommandLineUtils`.
 
 ### Create an Application
 We create our application by creating a `CommandLineApplication`.
